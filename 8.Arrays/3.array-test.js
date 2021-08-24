@@ -1,22 +1,24 @@
 var data = [
     1,
-    "ravi",
-    true,
+    "Uma",
+    true, 
     undefined,
     null,
     function(name){
         return name
     },
-    {
-        name:'Priyansh'
-    },
-    ["ReadableStream","Blue","Yellow"]
+    {name: 'JohnGalt'},
+    ["Red", "Blue", "Yellow"]
 ]
 
 console.log(data)
+//1. call the function
+//2. pass the object name as a parameter to that function
+//3. print the name to console
+var sample = data[5]
+var name = data[6].name
+console.log(sample(name))
 
-var a=data[5]
-var name=data[6].name
-console.log(a(name))
+console.log(data[5](data[6].name))
 
-console.log(data[5](data[6].name)+ " likes " +data[7][1])
+console.log(data[6].name + ' likes ' + data[7][1])

@@ -1,9 +1,8 @@
 function getname(){
 //console.log('Hello')
-
 return 'scott desting'
-
 }
+
 var name=getname()
 console.log(name)
 

@@ -1,29 +1,21 @@
-// var p1 = new Object()
-// var p2 = {}
+// var person1 = new Object()
+// var person2 = {}
 var person = Object.create(null)
 
-//console.log(p1)
-// console.log(p2)
-// console.log(p3)
+person.firstName ="Scott"
+person.lastName ="Desatnick"
 
-var person = new Object();
-
-person["firstname"] = "Scott"
-person["lastname"] = "Morrison"
-
-var Property="email"
-person[Property]="Scott@ef.com"
+var emailProperty = "email"
+person[emailProperty] = "Scott@ef.com"
 
 console.log(person)
-console.log(person["firstname"])
-console.log(person["lastname"])
+console.log(person["firstName"])
+console.log(person["lastName"])
 console.log(person["email"])
 
 person["address"] = new Object()
 
-person["address"]["state"]="Madhya Pradesh";
-person["address"]["city"]="Jabalpur";
-person["address"]["country"]="India";
-
-
+person["address"]["state"] ="Masachusetts"
+person["address"]["city"] ="Boston"
+person["address"]["country"] ="USA"
 console.log(person)

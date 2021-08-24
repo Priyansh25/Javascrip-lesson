@@ -1,19 +1,16 @@
-var data = new Array(3)
-console.log(data)
- 
-var data1 = new Array("Scott","Adam")
+var data1 = new Array("Scott", "Adam", "Tuan")
+
 console.log(data1)
 console.log(data1[0])
 console.log(data1[1])
+console.log(data1[2])
 console.log(data1[3])
 
-var data2= new Array(3)
+var data2 = new Array(3)
 
-data2[0]="red"
-data2[1]="blue"
-data2[2]="yellow"
-data2[3]="green"
+data2[0] = "Red"
+data2[1] = "Blue"
+// data2[2] = "Yellow"
+data2[3] = "Green"
 
 console.log(data2)
-console.log(data2[4])
-

@@ -1,10 +1,14 @@
 console.log(a)
-var a=10;
+console.log(b)
+console.log(c)
 
-s()
+var a =10;
+var b =20;
+var c=30;
 
-function s(){
-    console.log('funxtion s called')
+sample()
+
+
+function sample(){
+    console.log('function b is called')
 }
-
-s()

@@ -16,6 +16,4 @@ person["address"] = new Object()
 person[address][state]="Madhya Pradesh";
 person[address][city]="Jabalpur";
 person[address][country]="India";
-
-
 console.log(person)

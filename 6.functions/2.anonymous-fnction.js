@@ -1,24 +1,33 @@
-
-var hello=function (){
-    return "hello Buddies"
+var sayHello = function(){
+    return "This is anonymous function"
 }
-//console.log(hello)
-var msg= hello()
- console.log(msg)
 
- var getfullname = function(firstname,lastname){
-     return firstname + ' ' + lastname
- }
- var fullname=getfullname("Tarun","Bhai")
- console.log(fullname)
+var message = sayHello()
+console.log(message)
 
- var obj = {
-     firstname = "Priyansh",
-     lastname ="Dubey",
+/* 
+ ? You can use function name, 
+ ? but it doesn't make any difference
+*/
+var sendWishes = function sample(){
+    return "Best wishes to you all"
+}
 
-     getfullname:function(){
-         this.firstname+' '+this.lastname
-     }
+var message = sendWishes()
+console.log(message)
 
- }
+var getFullName = function (firstName, lastName){
+    return firstName + ' ' + lastName
+}
 
+var fullName = getFullName('Tuan', 'Bui')
+console.log(fullName)
+
+// Use case:  using function inside an object
+var obj = {
+    firstName: 'uma',
+    lastName: 'mahesh',
+    getFullName : function(){
+        this.firstName + ' ' + this.lastName
+    }
+}
